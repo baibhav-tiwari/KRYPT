@@ -12,5 +12,13 @@ const getEthereumContract = () => {
     console.log({
         provider,
         signer,
-    })
+        transactionsContract
+    });
+}
+export const TransactionProvider = ({ children }) => {
+    return (
+        <TransactionContext.Provider value={{ value: 'test' }}>
+            {children}
+        </TransactionContext.Provider>
+    );
 }
