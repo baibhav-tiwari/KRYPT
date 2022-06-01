@@ -16,6 +16,8 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
     />
 );
 const Welcome = () => {
+    const { value } = useContext(TransactionContext);
+
     const connectWallet = () => {
 
     }
