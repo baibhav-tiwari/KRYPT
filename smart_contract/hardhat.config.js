@@ -1,12 +1,11 @@
-const { defaultAccounts } = require('ethereum-waffle');
-
 require('@nomiclabs/hardhat-waffle');
+
 module.exports = {
   solidity: '0.8.0',
   networks: {
-    rinkeby: {
-      url: 'https://eth-rinkeby.alchemyapi.io/v2/IHSe0hLLlgMqudeh3xGWAk_5HYyo8jeM',
-      accounts: ['1d8d5a1474270c28ac52ab228215c489905ee64647c3463a398023d730999b6a']
-    }
-  }
-}
+    ropsten: {
+      url: 'https://eth-ropsten.alchemyapi.io/v2/z4WpA8UKgqnwbTYmrZu15yCOiijBKaRv',
+      accounts: ['2f99db8cdb04655028eee1dc98230925202f6b3e010e43fad2883b4bea90a1a3'],
+    },
+  },
+};
